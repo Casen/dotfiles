@@ -1,2 +1,24 @@
-dotfiles
-========
+#My Essential Setup
+- Ackrc to get ack to search .coffee files
+- Bash setup
+  - Highlight git diffs
+  - Display current git branch
+  - Display working directory
+- Git setup
+  - Abbreviations for git commands
+  - General setup for github
+- Vim setup
+  - Vundle for plugin management
+  - Sytax highlighting
+  - Misc plugin setup
+  - Misc usability preferences
+  - Plugins
+    - Nerd Tree
+    - CtrlP
+    - Ack.vim
+    - vim-surround
+    - vim-fugitive
+    - vim-repeat
+    - DelimitMate.vim
+    - vim-colorschemes
+    - CSApprox (used to translate gVim colorschemes for the terminal)
