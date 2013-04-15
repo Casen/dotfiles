@@ -20,7 +20,6 @@ Bundle 'Lokaltog/vim-easymotion'
 Bundle 'kien/ctrlp.vim'
 Bundle 'mileszs/ack.vim'
 Bundle 'flazz/vim-colorschemes'
-Bundle 'Raimondi/delimitMate'
 Bundle 'digitaltoad/vim-jade'
 Bundle 'groenewege/vim-less'
 Bundle 'garbas/vim-snipmate'
@@ -68,6 +67,16 @@ set ignorecase " <ignorecase> Ignore case when searching
 set scs        " <smartcase>  Don't ignore case when capitals are present
 
 " Movement control and visual pleasantries
+
+" Jump to next empty line below
+map <c-j> /^$<Cr>\|:noh<Cr>
+
+" Jump to next empty line above
+map <c-k> ?^$<Cr>\|:noh<Cr>
+
+" Capitalize word under cursor
+nmap <c-c> m`b~``
+
 set cul        " <cursorline>  Highlight the current line
 set nu         " <number>      Show line numbers in gutter
 set nuw=2      " <numberwidth> Default width of gutter
@@ -104,7 +113,7 @@ highlight NonText ctermfg=234
 
 let g:ctrlp_working_path_mode='a' " Make sure ctrlp always searches from the project root
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/]\.(git|hg|svn)$|build'
+  \ 'dir':  '\v[\/]\.(git|hg|svn)$|build|tmp|node_modules'
   \ }
 
 nmap <silent> <c-n> :NERDTreeToggle<CR>
