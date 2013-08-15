@@ -27,6 +27,7 @@ Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'godlygeek/csapprox'
+Bundle 'Lokaltog/powerline'
 " vim-scripts repos
 " non github repos
 
