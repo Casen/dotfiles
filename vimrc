@@ -112,6 +112,9 @@ colorscheme jellybeans
 "make the lightning bolts darker
 highlight NonText ctermfg=234
 
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts=1
+
 let g:ctrlp_working_path_mode='a' " Make sure ctrlp always searches from the project root
 let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/]\.(git|hg|svn)$|build|tmp|node_modules'

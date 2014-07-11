@@ -1,9 +1,13 @@
+########## Typical work settings #############
+export PATH=$(brew --prefix)/sbin:$(brew --prefix)/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/mysql/bin
 export EDITOR=vim
-export PATH="$HOME/bin:$PATH"
-export PATH="/usr/local/bin:$PATH:$(brew --prefix)/share/npm/bin:/usr/local/mysql/bin"
-source `which virtualenvwrapper.sh`
-[ -f $(brew --prefix)/etc/bash_completion ] && . $(brew --prefix)/etc/bash_completion
-export UBER_HOME="/usr/local/Cellar/uber-home/HEAD"
+export UBER_HOME="$HOME/Uber"
+export VAGRANT_DEFAULT_PROVIDER=aws
+[ -s "/usr/local/bin/virtualenvwrapper.sh" ] && . /usr/local/bin/virtualenvwrapper.sh
+[ -s "$(brew --prefix)/etc/bash_completion" ] && . $(brew --prefix)/etc/bash_completion
+[ -s "$HOME/.nvm/nvm.sh" ] && . $HOME/.nvm/nvm.sh
+#################################################
+
 export DYLD_LIBRARY_PATH="$DYLD_LIBRARY_PATH:/usr/local/mysql/lib"
 
 source ~/.bash/aliases
