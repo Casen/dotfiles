@@ -1,43 +1,43 @@
 set nocompatible               " be iMproved
 filetype off                   " required!
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim/
+call vundle#begin()
 
 " let Vundle manage Vundle
-" required! 
-Bundle 'gmarik/vundle'
+" required!
+Plugin 'gmarik/vundle.vim'
 
 " My Bundles here:
 "
 " original repos on github
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-repeat'
-Bundle 'scrooloose/nerdtree'
-Bundle 'honza/snipmate-snippets'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'kien/ctrlp.vim'
-Bundle 'mileszs/ack.vim'
-Bundle 'flazz/vim-colorschemes'
-Bundle 'digitaltoad/vim-jade'
-Bundle 'groenewege/vim-less'
-Bundle 'garbas/vim-snipmate'
-Bundle 'MarcWeber/vim-addon-mw-utils'
-Bundle 'tomtom/tlib_vim'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'godlygeek/csapprox'
-Bundle 'bling/vim-airline'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-repeat'
+Plugin 'scrooloose/nerdtree'
+Plugin 'Lokaltog/vim-easymotion'
+Plugin 'kien/ctrlp.vim'
+Plugin 'mileszs/ack.vim'
+Plugin 'flazz/vim-colorschemes'
+Plugin 'digitaltoad/vim-jade'
+Plugin 'groenewege/vim-less'
+Plugin 'garbas/vim-snipmate'
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'godlygeek/csapprox'
+Plugin 'bling/vim-airline'
 " vim-scripts repos
 " non github repos
 
+call vundle#end()             " required!
 filetype plugin indent on     " required!
 "
 " Brief help
-" :BundleList          - list configured bundles
-" :BundleInstall(!)    - install(update) bundles
-" :BundleSearch(!) foo - search(or refresh cache first) for foo
-" :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
+" :PluginList          - list configured plugins
+" :PluginInstall(!)    - install(update) plugins
+" :PluginSearch(!) foo - search(or refresh cache first) for foo
+" :PluginClean(!)      - confirm(or auto-approve) removal of unused plugins
 "
 " see :h vundle for more details or wiki for FAQ
 " NOTE: comments after Bundle command are not allowed
